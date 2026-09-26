@@ -1,5 +1,7 @@
 import Cards from "./components/Card"
 
+// data access through array objects 
+
 const App = () => {
 
 const arr = [
