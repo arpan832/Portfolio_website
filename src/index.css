@@ -1,5 +1,22 @@
 @import "tailwindcss";
 
-@theme {
-    --font-georgia: Georgia,serif 
+@font-face {
+  font-family: 'Valika';
+  src: url('/public/Fonts/Vilaka\ Modern\ Serif.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+    font-family:'Terminal';
+    src: url(/public/Fonts/terminal-grotesque.ttf) format('truetype');
+}
+@font-face{
+    font-family: 'Grande';
+    src: url('/public/Fonts/Parceh.otf') format('opentype')
+}
+
+@theme{
+    --font-custom: 'Valika',serif;
+    --font-display: 'Terminal',monospace;
+    --font-Parech : 'Grande',serif;
 }
