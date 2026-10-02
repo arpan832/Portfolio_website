@@ -1,0 +1,18 @@
+.halua {
+    background-color: orange;
+    padding: 4px;
+    margin: 20px;
+    gap: 2px;
+
+}
+
+h1 {
+    background-color: orange;
+    width: 220px;
+    height: 220px;
+    font-size: 220px;
+    border: black 10px;
+    Display:flex;
+    justify-content: center;
+    
+}
