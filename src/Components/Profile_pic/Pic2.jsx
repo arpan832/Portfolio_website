@@ -1,9 +1,10 @@
 import React from 'react'
+import sidewaysFlowers from '../../assets/sidewaysflowers.jpg'
 
 export default function Pic2() {
   return (
-    <div className='relative bottom-240 right-200 rotate-180 opacity-0.4'>
-       <img src = 'src/assets/sidewaysflowers.jpg' ></img>
+    <div className='absolute h-32 w-full overflow-hidden opacity-40 lg:relative lg:bottom-240 lg:right-200 lg:h-auto lg:w-auto lg:rotate-180'>
+       <img src = {sidewaysFlowers} alt='Decorative sideways flowers' className='h-full w-full object-cover lg:h-auto lg:w-auto' ></img>
     </div>
   )
 }

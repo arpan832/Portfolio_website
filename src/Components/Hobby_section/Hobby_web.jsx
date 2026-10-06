@@ -6,12 +6,12 @@ export default function Hobby_web() {
        alert("you clicked a button")
     }
   return (
-    <div  className="grid grid-cols-3 w-220 h-120 gap-4 relative bottom-300 left-80">
-      <button onClick={click} className="bg-white p-6  text-white border-2 border-black col-span-2 h-60 w-220 cursor-pointer "><img src='flower3.jpg' alt='my pic' className='w-full h-full object-cover'></img></button>
-      <div className="bg-white p-6  text-white border-2 border-black h-80 relative top-64">2</div>
-      <div className=" bg-white p-6  text-white h-80 border-2 border-black relative bottom-20 w-148 ">3</div>
-      <div className=" bg-white p-6  text-white h-40 border-2 border-black relative top-65 w-170 right-75">3</div>
-      <div className=" bg-white p-6  text-white h-40 border-2 border-black relative top-65 w-50 left-21 ">3</div>
+    <div  className="responsive-copy  mx-auto grid w-full max-w-md grid-cols-1 gap-4 px-5 pb-12 lg:relative lg:grid-cols-3 lg:w-220 lg:max-w-none lg:px-0">
+      <button onClick={click} className="h-60 w-full cursor-pointer border-2 border-black bg-white p-6 text-white lg:col-span-2 lg:w-220 "><img src='flower3.jpg' alt='My web hobby' className='h-full w-full object-cover'></img></button>
+      <div className="h-48 border-2 border-black bg-white p-6 text-white lg:relative lg:top-64 lg:h-80">2</div>
+      <div className="h-48 border-2 border-black bg-white p-6 text-white lg:relative lg:bottom-20 lg:h-80 lg:w-148">3</div>
+      <div className="h-32 border-2 border-black bg-white p-6 text-white lg:relative lg:right-75 lg:top-65 lg:h-40 lg:w-170">3</div>
+      <div className="h-32 border-2 border-black bg-white p-6 text-white lg:relative lg:left-21 lg:top-65 lg:h-40 lg:w-50">3</div>
     </div>
   )
 }

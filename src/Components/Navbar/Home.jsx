@@ -4,7 +4,7 @@ const Home = () => {
   
 
   return (
-    <a href="https://youtu.be/BIqvBPVcz7Y" className={navItemClass}>
+    <a href="#home" className={navItemClass}>
        Home 
     </a>
   )

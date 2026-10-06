@@ -8,14 +8,15 @@ import Hobby_web from './Components/Hobby_section/Hobby_web'
 
 export default function App() {
   return (
-    <div>
+    <main id='home'>
       <Navbar />
       <Hero />
-      <Bio />
+      <Bio id='whoami'/>
       <Pic />
       <Pic2 />
-      <Hobby_web />
-      
-    </div>
+      <section id='hobbies' aria-label='Hobbies ' className='lg:-mt-310'>
+        <Hobby_web />
+      </section>
+    </main>
   )
 }

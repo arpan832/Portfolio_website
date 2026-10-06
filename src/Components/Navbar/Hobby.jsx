@@ -3,7 +3,7 @@ import { navItemClass } from './navbarstyles'
 
 export default function Hobby() {
   return (
-    <a href="https://youtu.be/BIqvBPVcz7Y" className={navItemClass}>
+    <a href="#hobbies" className={navItemClass}>
         Hobby
     </a>
   )
