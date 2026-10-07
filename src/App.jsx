@@ -7,6 +7,7 @@ import Pic2 from './Components/Profile_pic/Pic2'
 import Hobby_web from './Components/Hobby_section/Hobby_web'
 import Hobby_cad from './Components/Hobby_section/Hobby_cad'
 import Hobby_art from './Components/Hobby_section/Hobby_art'
+import Hobby_websites from './Components/Hobby_section/Hobby_websites'
 
 export default function App() {
   const [web, setweb] = useState('profile');
@@ -23,6 +24,7 @@ export default function App() {
           <section id='hobbies' aria-label='Hobbies ' className='lg:-mt-310'>
             <Hobby_web onSwitch={() => setweb('cadprojects')}
               onArt={() => setweb('artProjects')}
+              onWeb={()=> setweb('webProjects')}
             />
           </section>
         </main>
@@ -33,6 +35,9 @@ export default function App() {
       {web ==='artProjects' && (
          <Hobby_art onArt={()=> setweb('profile')}></Hobby_art>
       )}   
+      {web === 'webProjects' && (
+        <Hobby_websites onWeb={()=> setweb('profile')}></Hobby_websites>
+      )}
     </div>
 
   )
