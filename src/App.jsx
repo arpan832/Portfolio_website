@@ -8,6 +8,8 @@ import Hobby_web from './Components/Hobby_section/Hobby_web'
 import Hobby_cad from './Components/Hobby_section/Hobby_cad'
 import Hobby_art from './Components/Hobby_section/Hobby_art'
 import Hobby_websites from './Components/Hobby_section/Hobby_websites'
+import Hobby_Hardware from './Components/Hobby_section/Hobby_Hardware'
+import Hobby_Contact from './Components/Hobby_section/Hobby_Contact'
 
 export default function App() {
   const [web, setweb] = useState('profile');
@@ -25,6 +27,8 @@ export default function App() {
             <Hobby_web onSwitch={() => setweb('cadprojects')}
               onArt={() => setweb('artProjects')}
               onWeb={()=> setweb('webProjects')}
+              onHardware ={() => setweb('HardwareProjects')}
+              onContact={()=>setweb('Contact')}
             />
           </section>
         </main>
@@ -37,6 +41,14 @@ export default function App() {
       )}   
       {web === 'webProjects' && (
         <Hobby_websites onWeb={()=> setweb('profile')}></Hobby_websites>
+      )}
+      { web === 'HardwareProjects' && (
+         <Hobby_Hardware OnHardware={() => setweb ('profile')}></Hobby_Hardware>
+      )
+
+      }
+      {web === 'Contact' && (
+         <Hobby_Contact onContact={() => setweb('profile')}></Hobby_Contact>
       )}
     </div>
 
