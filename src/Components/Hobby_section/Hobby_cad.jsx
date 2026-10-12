@@ -3,20 +3,20 @@ import React from 'react'
 export default function Hobby_cad({ onBack }) {
   const Cads = [
     {
-      title: 'Expandable Book Organizer',
-      image: 'expandable book organizer.png',
-      github: 'https://github.com/arpan832/Portfolio_website',
-      onShape: 'https://cad.onshape.com/',
+      title: 'Proton Rocket -1',
+      image: 'Screenshot 2026-10-12 182124.png',
+      github: 'https://www.printables.com/model/1873723-proton-rocket-1',
+      onShape: 'https://cad.onshape.com/documents/841bf87d854d816f1e872f81/w/e393f3c28d8b324b5ca7a59c/e/e3b32a6484142abfd9f9cd2c',
     },
  {
-      title: 'Proton Rocket -1',
-      image: 'expandable book organizer.png',
-      github: 'https://github.com/arpan832/Portfolio_website',
-      onShape: 'https://cad.onshape.com/',
+      title: 'Expandable Book organizer ',
+      image: 'ExpandableBookOrganizerFixed.png',
+      github: 'https://www.printables.com/model/1858776-project-expandable-book-holder',
+      onShape: 'https://cad.onshape.com/documents/a077e6f096a97bd1b6e8d0f7/w/ce99a17a23b60ae1b855a111/e/26bf7dc8178ceb5b054d7315',
     },
     {
-      title: 'Attachable Desk Light',
-      image: 'expandable book organizer.png',
+      title: 'Attachable Desk Lamp',
+      image: 'ADL.png',
       github: 'https://github.com/arpan832/Portfolio_website',
       onShape: 'https://cad.onshape.com/',
     },
@@ -36,7 +36,7 @@ export default function Hobby_cad({ onBack }) {
         {Cads.map((Cads) => (
           <article
             key={Cads.title}
-            className='overflow-hidden rounded-lg border-2 border-black bg-white p-4 shadow-sm'>
+            className='overflow-hidden rounded-lg border-2 border-black bg-white p-4 shadow-sm hover:translate-y-4'>
             <div className='aspect-video w-full overflow-hidden'>
               <img
                 src={Cads.image}
@@ -55,7 +55,7 @@ export default function Hobby_cad({ onBack }) {
                 rel="noreferrer"
                 className='rounded-lg bg-gray-300 px-4 py-2 font-display hover:bg-amber-100'
               >
-                Github
+                Printables
               </a>
               <a
                 href={Cads.onShape}

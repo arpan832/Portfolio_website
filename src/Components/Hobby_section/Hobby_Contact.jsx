@@ -4,8 +4,9 @@ export default function Hobby_Contact({ onContact }) {
 
       const Cads = [
     {
-      title: 'Expandable Book Organizer',
-      image: 'expandable book organizer.png',
+      title: 'Instagram',
+      image: 'https://i.pinimg.com/1200x/a1/67/30/a16730b01c8e4ec4353090f5a225900d.jpg ',
+      Description:"Here i post my Contents",
       github: 'https://github.com/arpan832/Portfolio_website',
       onShape: 'https://cad.onshape.com/',
     },
@@ -13,7 +14,6 @@ export default function Hobby_Contact({ onContact }) {
       title: 'Proton Rocket -1',
       image: 'expandable book organizer.png',
       github: 'https://github.com/arpan832/Portfolio_website',
-      onShape: 'https://cad.onshape.com/',
     },
     {
       title: 'Attachable Desk Light',
@@ -49,6 +49,9 @@ export default function Hobby_Contact({ onContact }) {
             <h2 className='mt-4 font-display text-xl'>
               {Contacts.title}
             </h2>
+            <h1 className='mt-4 font-Parech'>
+              {Contacts.Description}
+            </h1>
             <div className='mt-4 flex flex-wrap gap-3'>
               <a
                 href={Contacts.github}
@@ -56,16 +59,9 @@ export default function Hobby_Contact({ onContact }) {
                 rel="noreferrer"
                 className='rounded-lg bg-gray-300 px-4 py-2 font-display hover:bg-amber-100'
               >
-                Github
+                Instagram 
               </a>
-              <a
-                href={Contacts.onShape}
-                target='_blank'
-                rel="noreferrer"
-                className='rounded-lg bg-gray-300 px-4 py-2 font-display hover:bg-amber-100'
-              >
-                Onshape
-              </a>
+              
 
             </div>
 

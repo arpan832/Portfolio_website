@@ -3,23 +3,14 @@ import React from 'react'
 export default function Hobby_Hardware({ OnHardware }) {
     const Cads = [
     {
-      title: 'Expandable Book Organizer',
-      Desription:'This is an Book organizer that can expand',
-      image: 'expandable book organizer.png',
-      github: 'https://github.com/arpan832/Portfolio_website',
-      onShape: 'https://cad.onshape.com/',
+      title: 'KHOGU',
+      Desription:'A Portable Music player that runs offline :still Ongoing ',
+      image: 'https://i.pinimg.com/1200x/a1/96/99/a1969995df9d6347f33be7b762660399.jpg',
     },
  {
-      title: 'Proton Rocket -1',
-      image: 'expandable book organizer.png',
-      github: 'https://github.com/arpan832/Portfolio_website',
-      onShape: 'https://cad.onshape.com/',
-    },
-    {
-      title: 'Attachable Desk Light',
-      image: 'expandable book organizer.png',
-      github: 'https://github.com/arpan832/Portfolio_website',
-      onShape: 'https://cad.onshape.com/',
+      title: 'Project',
+      Desription:"More projects Coming soon",
+      image:"https://i.pinimg.com/1200x/5a/6c/69/5a6c6989a09a029d3f2baab703101d49.jpg"
     },
   ]
   return (
