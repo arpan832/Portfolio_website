@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+ import React, { useState } from 'react'
 
 export default function Hobby_web({ onSwitch, onArt, onWeb, onHardware, onContact }) {
   const [Hovered, setHovered] = useState(false)
@@ -70,8 +70,6 @@ export default function Hobby_web({ onSwitch, onArt, onWeb, onHardware, onContac
       </div>
 
     </div>
-
-
 
 
   )

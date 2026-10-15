@@ -10,13 +10,14 @@ import Hobby_art from './Components/Hobby_section/Hobby_art'
 import Hobby_websites from './Components/Hobby_section/Hobby_websites'
 import Hobby_Hardware from './Components/Hobby_section/Hobby_Hardware'
 import Hobby_Contact from './Components/Hobby_section/Hobby_Contact'
+import { BrowserRouter, Route, useNavigate,Navigate,Routes} from 'react-router-dom'
 
-export default function App() {
-  const [web, setweb] = useState('profile');
+function Homepage() {
+
+ const navigate = useNavigate()
 
   return (
-    <div>
-      {web === 'profile' && (
+    
         <main id='home'>
           <Navbar />
           <Hero />
@@ -24,34 +25,81 @@ export default function App() {
           <Pic />
           <Pic2 />
           <section id='hobbies' aria-label='Hobbies ' className='lg:-mt-310'>
-            <Hobby_web onSwitch={() => setweb('cadprojects')}
-              onArt={() => setweb('artProjects')}
-              onWeb={()=> setweb('webProjects')}
-              onHardware ={() => setweb('HardwareProjects')}
-              onContact={()=>setweb('Contact')}
+            <Hobby_web onSwitch={() => navigate('/cad')}
+              onArt={() => navigate('/art')}
+              onWeb={()=> navigate('/web')}
+              onHardware ={() => navigate('/hardware')}
+              onContact={()=>navigate('/Contact')}
             />
           </section>
         </main>
       )}
-      {web === 'cadprojects' && (
-        <Hobby_cad onBack={() => setweb('profile')}></Hobby_cad>
-         )}
-      {web ==='artProjects' && (
-         <Hobby_art onArt={()=> setweb('profile')}></Hobby_art>
-      )}   
-      {web === 'webProjects' && (
-        <Hobby_websites onWeb={()=> setweb('profile')}></Hobby_websites>
-      )}
-      { web === 'HardwareProjects' && (
-         <Hobby_Hardware OnHardware={() => setweb ('profile')}></Hobby_Hardware>
-      )
-
-      }
-      {web === 'Contact' && (
-         <Hobby_Contact onContact={() => setweb('profile')}></Hobby_Contact>
-      )}
-    </div>
-
+    
+function CadPage(){
+  const navigate = useNavigate()
+  
+  return (
+    <Hobby_cad
+     onBack={() => navigate('/')}
+     ></Hobby_cad>
   )
 }
 
+function ArtPage() {
+  const navigate = useNavigate()
+  return (
+    <Hobby_art
+     onArt = {() => navigate('/')}
+     ></Hobby_art>
+  )
+}
+
+function WebPage() { 
+  const navigate = useNavigate()
+  return (
+    <Hobby_websites 
+     onWeb = {() => navigate('/')}
+     ></Hobby_websites>
+  )
+}
+
+function HardwarePage () {
+  const navigate = useNavigate()
+
+  return (
+    <Hobby_Hardware
+     OnHardware={()=> navigate('/')}
+     ></Hobby_Hardware>
+  )
+}
+
+function ContactPage () {
+  const navigate = useNavigate () 
+  return (
+    <Hobby_Contact
+     onContact={() => navigate('/')}
+     ></Hobby_Contact>
+  )
+}
+
+
+export default function App() {
+  return (
+    <BrowserRouter>
+    <Routes>
+      <Route path = '/' element = {<Homepage/>} />
+        <Route path="/cad" element={<CadPage />} />
+        <Route path="/art" element={<ArtPage />} />
+        <Route path="/web" element={<WebPage />} />
+        <Route path="/hardware" element={<HardwarePage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        
+        <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
+    </BrowserRouter>
+  )
+}
+
+
+
+  

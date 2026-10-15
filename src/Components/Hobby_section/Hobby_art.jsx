@@ -3,22 +3,8 @@ import React from 'react'
 export default function Hobby_art({onArt}) {
    const Cads = [
     {
-      title: 'Expandable Book Organizer',
-      image: 'expandable book organizer.png',
-      github: 'https://github.com/arpan832/Portfolio_website',
-      onShape: 'https://cad.onshape.com/',
-    },
- {
-      title: 'Proton Rocket -1',
-      image: 'expandable book organizer.png',
-      github: 'https://github.com/arpan832/Portfolio_website',
-      onShape: 'https://cad.onshape.com/',
-    },
-    {
-      title: 'Attachable Desk Light',
-      image: 'expandable book organizer.png',
-      github: 'https://github.com/arpan832/Portfolio_website',
-      onShape: 'https://cad.onshape.com/',
+      title: 'This Page Will be Updated Soon',
+      image: 'https://i.pinimg.com/736x/69/49/14/69491492dc263bea8c1df7822f588aa2.jpg',
     },
   ]
   return (
@@ -48,26 +34,6 @@ export default function Hobby_art({onArt}) {
             <h2 className='mt-4 font-display text-xl'>
               {Contacts.title}
             </h2>
-            <div className='mt-4 flex flex-wrap gap-3'>
-              <a
-                href={Contacts.github}
-                target='_blank'
-                rel="noreferrer"
-                className='rounded-lg bg-gray-300 px-4 py-2 font-display hover:bg-amber-100'
-              >
-                Github
-              </a>
-              <a
-                href={Contacts.onShape}
-                target='_blank'
-                rel="noreferrer"
-                className='rounded-lg bg-gray-300 px-4 py-2 font-display hover:bg-amber-100'
-              >
-                Onshape
-              </a>
-
-            </div>
-
 
           </article>
         ))}

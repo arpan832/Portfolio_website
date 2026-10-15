@@ -7,11 +7,6 @@ export default function Hobby_Hardware({ OnHardware }) {
       Desription:'A Portable Music player that runs offline :still Ongoing ',
       image: 'https://i.pinimg.com/1200x/a1/96/99/a1969995df9d6347f33be7b762660399.jpg',
     },
- {
-      title: 'Project',
-      Desription:"More projects Coming soon",
-      image:"https://i.pinimg.com/1200x/5a/6c/69/5a6c6989a09a029d3f2baab703101d49.jpg"
-    },
   ]
   return (
     <main className='min-h-screen p-6'>
