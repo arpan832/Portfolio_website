@@ -24,11 +24,14 @@ export default function Hobby_Contact({ onContact }) {
     {
       title: 'Github',
       image: 'https://avatars.githubusercontent.com/u/205518282?v=4',
-      Description:'My github'
+      Description:'My github',
+      github:'https://github.com/arpan832'
     }
   ]
   return (
-    <main className='min-h-screen p-6'>
+    <main className='min-h-screen w-screen bg-cover bg-center overflow-hidden bg-no-repeat p-6'
+    style={{backgroundImage:"url('https://i.pinimg.com/1200x/0a/46/ed/0a46ed306c13419c838bbebb54a0308b.jpg')"}}
+    >
       <button
         onClick={onContact} // Back button 
         className='rounded-lg bg-green-200 px-4 py-2 font-bold'

@@ -22,7 +22,10 @@ export default function Hobby_cad({ onBack }) {
     },
   ]
   return (
-    <main className='min-h-screen p-6'>
+    <main className='min-h-screen w-screen bg-cover bg-center overflow-hidden bg-no-repeat p-6'
+     style={{backgroundImage:"url('https://i.pinimg.com/736x/bc/af/b1/bcafb1a683eb9a7324bbd9a2aa9724f6.jpg')"}}
+    >
+
       <button
         onClick={onBack} // Back button 
         className='rounded-lg bg-green-200 px-4 py-2 font-bold'

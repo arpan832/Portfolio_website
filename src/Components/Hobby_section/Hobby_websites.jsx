@@ -26,12 +26,15 @@ export default function Hobby_websites({ onWeb }) {
     },
     {
       title:"Safe-Voice",
+      image:"SafeVoice.png",
       Description:"This is a Community sharing platform where people can share there Bad or good experiences anonamously and can get help from the community People ",
       github:"https://arpan832.github.io/Safe-Voice-/",
     }
   ]
   return (
-    <main className='min-h-screen p-6'>
+    <main className='min-h-screen w-screen bg-cover bg-center overflow-hidden bg-no-repeat p-6'
+    style={{backgroundImage:"url('https://i.pinimg.com/1200x/b9/78/cc/b978cc03fcd84f722b6b462ef753cb87.jpg')"}}
+    >
       <button
         onClick={onWeb} // Back button 
         className='rounded-lg bg-green-200 px-4 py-2 font-bold'

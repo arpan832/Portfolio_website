@@ -1,12 +1,12 @@
  import React, { useState } from 'react'
 
-export default function Hobby_web({ onSwitch, onArt, onWeb, onHardware, onContact }) {
+export default function Hobby_web({ onSwitch, onArt, onWeb, onHardware, onContact,onGaming }) {
   const [Hovered, setHovered] = useState(false)
   const [HoveredArt, setHoveredArt] = useState(false)
   const [HoveredWeb, setHoveredWeb] = useState(false)
   const [HoveredHardware, setHoveredHardware] = useState(false)
   const [HoveredContact, setHoveredContact] = useState(false)
-  
+  const [HoveredGaming, setHoveredGaming] = useState(false)
   return (
 
     <div className="responsive-copy mx-auto grid w-full max-w-6xl min-w-0 grid-cols-1 gap-4 overflow-x-clip px-5 pb-12 pt-16 text-2xl leading-tight tracking-wide lg:relative lg:grid-cols-3 lg:gap-6 lg:bottom-20 ">
@@ -68,7 +68,17 @@ export default function Hobby_web({ onSwitch, onArt, onWeb, onHardware, onContac
           <img src={HoveredContact ? 'https://i.pinimg.com/736x/3f/c3/98/3fc398d6ce6028869542b1f294f79e19.jpg' : 'https://i.pinimg.com/736x/9b/68/79/9b6879279e992ff1716e4a72c2040628.jpg'} alt='Contact' className='block h-full min-h-0 w-full min-w-0 object-cover'></img>
         </button>
       </div>
-
+      <div className="box-border min-w-0 w-full border-2 border-black bg-white p-4 text-white lg:h-48">
+          <button
+          onClick={onGaming}
+          className="h-full min-w-0 w-full cursor-grab overflow-hidden border-black bg-white p-4 text-white "
+          onMouseEnter={() => setHoveredGaming(true)}
+          onMouseLeave={() => setHoveredGaming(false)}
+        >
+          {/* <div className='font-extrabold'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cumque provident ipsum, quisquam aliquam dicta illum voluptatum dolorum, voluptate omnis possimus amet cupiditate tempore error voluptatem animi impedit, eius sapiente.</div> */}
+          <img src={HoveredGaming ? 'https://i.pinimg.com/736x/83/0e/72/830e720f81e2cb7282c1a33a1a2abb60.jpg' : 'https://i.pinimg.com/736x/6a/a5/1a/6aa51adcbbfa7d201f2bcad9afa168b9.jpg'} alt='Contact' className='block h-full min-h-0 w-full min-w-0 object-cover'></img>
+        </button>
+      </div>
     </div>
 
 

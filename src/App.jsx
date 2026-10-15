@@ -11,6 +11,7 @@ import Hobby_websites from './Components/Hobby_section/Hobby_websites'
 import Hobby_Hardware from './Components/Hobby_section/Hobby_Hardware'
 import Hobby_Contact from './Components/Hobby_section/Hobby_Contact'
 import { BrowserRouter, Route, useNavigate,Navigate,Routes} from 'react-router-dom'
+import Hobby_gaming from './Components/Hobby_section/Hobby_gaming'
 
 function Homepage() {
 
@@ -30,6 +31,7 @@ function Homepage() {
               onWeb={()=> navigate('/web')}
               onHardware ={() => navigate('/hardware')}
               onContact={()=>navigate('/Contact')}
+              onGaming={()=>navigate('/gaming')}
             />
           </section>
         </main>
@@ -81,7 +83,14 @@ function ContactPage () {
      ></Hobby_Contact>
   )
 }
-
+function GamingPage () {
+  const navigate = useNavigate ()
+  return (
+    <Hobby_gaming 
+     onGaming={() => navigate('/')}
+     ></Hobby_gaming>
+  )
+}
 
 export default function App() {
   return (
@@ -93,7 +102,8 @@ export default function App() {
         <Route path="/web" element={<WebPage />} />
         <Route path="/hardware" element={<HardwarePage />} />
         <Route path="/contact" element={<ContactPage />} />
-        
+        <Route path="/gaming" element = {<GamingPage/>}/>
+                
         <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
     </BrowserRouter>
