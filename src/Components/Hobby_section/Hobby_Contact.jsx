@@ -5,7 +5,7 @@ export default function Hobby_Contact({ onContact }) {
       const Cads = [
     {
       title: 'Instagram',
-      image: 'https://scontent-lga3-2.cdninstagram.com/v/t51.82787-19/845291467_17893640724611879_6622717840297017056_n.jpg?_nc_cat=105&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=Q0_4xqbS9IwQ7kNvwGe7ueS&_nc_oc=AdpD6Ya9kw4SR0OhBjSnRg6sH4BgiVfeuIGA3tPBWJ37axJN5W66VeDWGiW9my_IWm0&_nc_zt=24&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_gid=Ozik3byDYDJRqhKQlHrXhQ&_nc_ss=7b6a8&oh=00_AQOvsoVQch_Hi448ovzf0-DRYDIRZdHzHZU-F9xLy4zNfg&oe=6AD2EC68 ',
+      image: 'https://i.pinimg.com/736x/12/6b/31/126b31f7e249273278e283153204c231.jpg ',
       Description:"Here i post my Content",
       github: 'https://www.instagram.com/arpannnn_md/',
   

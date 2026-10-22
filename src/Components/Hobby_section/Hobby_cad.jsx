@@ -4,19 +4,19 @@ export default function Hobby_cad({ onBack }) {
   const Cads = [
     {
       title: 'Proton Rocket -1',
-      image: 'Screenshot 2026-10-12 182124.png',
+      image: 'https://media.printables.com/media/prints/72cd71b8-aace-4992-86f5-f52a899b58eb/images/14065604_9f1cdb37-5df4-4e6a-9728-4367de82ada8_c6d00a5e-06b6-4ad6-b425-e8c4de8b06c9/thumbs/inside/1920x1440/png/screenshot-2026-10-10-220440.webp',
       github: 'https://www.printables.com/model/1873723-proton-rocket-1',
       onShape: 'https://cad.onshape.com/documents/841bf87d854d816f1e872f81/w/e393f3c28d8b324b5ca7a59c/e/e3b32a6484142abfd9f9cd2c',
     },
  {
       title: 'Expandable Book organizer ',
-      image: 'ExpandableBookOrganizerFixed.png',
+      image: 'https://media.printables.com/media/prints/fdb8d50a-14ec-4658-9686-5a27e478dce4/images/13939926_e311071a-ca79-4892-acb0-766bb0a64456_2de8c119-c59c-4a36-b705-65717d6b5409/thumbs/inside/1600x1200/png/screenshot-2026-09-28-151018.webp',
       github: 'https://www.printables.com/model/1858776-project-expandable-book-holder',
       onShape: 'https://cad.onshape.com/documents/a077e6f096a97bd1b6e8d0f7/w/ce99a17a23b60ae1b855a111/e/26bf7dc8178ceb5b054d7315',
     },
     {
       title: 'Attachable Desk Lamp',
-      image: 'ADL.png',
+      image: 'https://media.printables.com/media/prints/30c6f753-ecd2-4784-8c18-805041696fc9/images/14065983_22632c5a-496b-4ff4-b210-ed2b339d65c9_89b7b07c-cf3f-4e75-baca-34549c94b3ca/thumbs/inside/1600x1200/png/screenshot-2026-10-12-022808.webp',
       github: 'https://github.com/arpan832/Portfolio_website',
       onShape: 'https://cad.onshape.com/',
     },
