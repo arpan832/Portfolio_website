@@ -53,7 +53,7 @@ export default function Hobby_websites({ onWeb }) {
               <img
                 src={Contacts.image}
                 alt={Contacts.title}
-                className='block h-full w-full object-cover'
+                className='block h-full w-full object-cover grayscale transition duration-300 hover:grayscale-0'
                 loading='lazy'
               />
             </div>

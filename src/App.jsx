@@ -21,11 +21,15 @@ function Homepage() {
     
         <main id='home'>
           <Navbar />
-          <Hero />
-          <Bio id='whoami' />
-          <Pic />
-          <Pic2 />
-          <section id='hobbies' aria-label='Hobbies ' className='lg:-mt-310'>
+          <section className='relative isolate min-h-[36rem] overflow-visible lg:min-h-[42rem]'>
+            <Hero />
+            <Pic />
+          </section>
+          <section className='relative'>
+            <Bio id='whoami' />
+            <Pic2 />
+          </section>
+          <section id='hobbies' aria-label='Hobbies'>
             <Hobby_web onSwitch={() => navigate('/cad')}
               onArt={() => navigate('/art')}
               onWeb={()=> navigate('/web')}

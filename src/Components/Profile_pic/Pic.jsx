@@ -2,8 +2,8 @@ import React from 'react'
 
 const Pic = () => {
   return (
-    <div className='pointer-events-none absolute -z-10 h-full w-full overflow-hidden opacity-70 lg:relative lg:bottom-350 lg:left-200 lg:h-screen lg:w-screen lg:opacity-100 '>
-     <img src = "https://i.pinimg.com/736x/9d/04/1b/9d041bf337ba71566ba5138ab9c76907.jpg" alt="Decorative flower" className=' lg:h-auto lg:w-auto lg:block  '></img>
+    <div className=' relative z-0 h-64 w-full opacity-70 lg:absolute lg:right-0 lg:top-0 lg:h-full lg:w-1/2 lg:opacity-100 rotate-5 grayscale transition duration-300 hover:grayscale-0'>
+     <img src="MyId.png" alt="Decorative flower" className='block h-full w-full object-contain object-right' />
     </div>
   )
 }

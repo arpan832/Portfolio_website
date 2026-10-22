@@ -44,7 +44,7 @@ export default function Hobby_cad({ onBack }) {
               <img
                 src={Cads.image}
                 alt={Cads.title}
-                className='block h-full w-full object-cover'
+                className='block h-full w-full object-cover grayscale transition duration-300 hover:grayscale-0'
                 loading='lazy'
               />
             </div>

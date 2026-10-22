@@ -9,7 +9,7 @@ export default function Hobby_web({ onSwitch, onArt, onWeb, onHardware, onContac
   const [HoveredGaming, setHoveredGaming] = useState(false)
   return (
 
-    <div className="responsive-copy mx-auto grid w-full max-w-6xl min-w-0 grid-cols-1 gap-4 overflow-x-clip px-5 pb-12 pt-16 text-2xl leading-tight tracking-wide lg:relative lg:grid-cols-3 lg:gap-6 lg:bottom-20 ">
+      <div className="responsive-copy mx-auto grid w-full max-w-6xl min-w-0 grid-cols-1 gap-4 overflow-x-clip px-5 pb-12 pt-16 text-2xl leading-tight tracking-wide lg:grid-cols-3 lg:gap-6">
       <button onClick={onSwitch}
         className="box-border h-60 min-w-0 w-full cursor-pointer overflow-hidden border-2 border-black bg-white p-4 text-white lg:col-span-2 lg:h-80"
         onMouseEnter={() => setHovered(true)}
