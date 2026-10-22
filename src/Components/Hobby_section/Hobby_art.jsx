@@ -21,7 +21,7 @@ export default function Hobby_art({onArt}) {
       <h1 className='p-6 text-center font-display text-4xl underline'>
         My Arts
       </h1>
-      <div className='grid grid-cols-3 gap-6 md:grid-cols-3 lg:grid-cols-3 '>
+      <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 '>
         {Cads.map((Contacts) => (
           <article
             key={Contacts.title}
