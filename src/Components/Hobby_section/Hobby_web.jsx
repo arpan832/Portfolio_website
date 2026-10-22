@@ -52,7 +52,7 @@ export default function Hobby_web({ onSwitch, onArt, onWeb, onHardware, onContac
 
         >
           {/* <div className='font-extrabold'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cumque provident ipsum, quisquam aliquam dicta illum voluptatum dolorum, voluptate omnis possimus amet cupiditate tempore error voluptatem animi impedit, eius sapiente.</div> */}
-          <img src={HoveredHardware ? 'https://i.pinimg.com/736x/0a/f5/29/0af529a629cf6ce3682824697662a28b.jpg' : 'harDware.png'} alt='Art images' className='block h-full min-h-0 w-full min-w-0 object-cover'></img>
+          <img src={HoveredHardware ? 'https://i.pinimg.com/736x/0a/f5/29/0af529a629cf6ce3682824697662a28b.jpg' : 'hardware.png'} alt='Art images' className='block h-full min-h-0 w-full min-w-0 object-cover'></img>
 
         </button>
       </div>
